@@ -1,5 +1,9 @@
 # Creating new user on peacock server
 
+This guide is on creating a new account on the peacock server, giving a new user access to the account.
+
+<br>
+
 ## Create new user account _(as the admin)_
 
 You'll need to be logged in as an existing user with admin permissions.
@@ -54,7 +58,7 @@ ssh-keygen -N "[PASSPHRASE]" -f "$env:USERPROFILE\.ssh\[SAVE_FILE]"
 ssh-keygen -N "[PASSPHRASE]" -f ~/.ssh/[SAVE_FILE]   # no quotes
 ```
 
-**Interactive mode in either CMD or PowerShell** (prompts for inputs):
+**Interactive mode, in any terminal** (prompts for inputs):
 
 ```bash
 ssh-keygen
