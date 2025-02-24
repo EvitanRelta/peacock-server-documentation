@@ -32,24 +32,32 @@ The peacock server has password login disabled, so SSH public key authentication
 > ⚠️ **For Windows 7/8/8.1 or Windows 10 _(earlier than build 1809)_:** \
 > OpenSSH _(which is needed for `ssh-keygen`)_ is not preinstalled. Use [PuTTY](https://www.putty.org) or install OpenSSH manually.
 
-Since OpenSSH is preinstalled on Windows 10 _(build 1809 or later)_ and Windows 11. Run these in CMD/PowerShell:
+As OpenSSH is preinstalled on Windows 10 _(build 1809 or later)_ and Windows 11, `ssh-keygen` should be available in any terminal on your PC.
+
+Run these in CMD/PowerShell/Bash to create an Ed25519 key-pair:
 
 **CMD**:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -N "[PASSPHRASE]" -f "%USERPROFILE%\.ssh\[SAVE_FILE]"
+ssh-keygen -N "[PASSPHRASE]" -f "%USERPROFILE%\.ssh\[SAVE_FILE]"
 ```
 
 **PowerShell**:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -N "[PASSPHRASE]" -f "$env:USERPROFILE\.ssh\[SAVE_FILE]"
+ssh-keygen -N "[PASSPHRASE]" -f "$env:USERPROFILE\.ssh\[SAVE_FILE]"
+```
+
+**Bash / Git Bash**:
+
+```bash
+ssh-keygen -N "[PASSPHRASE]" -f ~/.ssh/[SAVE_FILE]   # no quotes
 ```
 
 **Interactive mode in either CMD or PowerShell** (prompts for inputs):
 
 ```bash
-ssh-keygen -t rsa -b 4096
+ssh-keygen
 ```
 
 -   `[PASSPHRASE]` - is the passphrase to encrypt your SSH key with
@@ -82,6 +90,8 @@ As an admin logged in on the peacock server, you can do this using `echo` and `s
 ```bash
 echo "ssh-rsa AAAAB3NzaC...HIbbDaTTAQ== shaun@LAPTOP-V66PNAGT" | sudo tee -a /home/[NEW_USER]/.ssh/authorized_keys > /dev/null
 ```
+
+<br>
 
 ## Accessing the server _(as the new user)_
 
