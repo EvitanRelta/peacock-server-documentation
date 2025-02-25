@@ -1,6 +1,6 @@
 # Creating new user on peacock server
 
-This guide is on creating a new account on the peacock server, giving a new user access to the account.
+This guide is on creating a new account on the peacock server and giving a new user access to the account.
 
 <br>
 

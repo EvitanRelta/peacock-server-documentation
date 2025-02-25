@@ -1,6 +1,6 @@
 # Accessing server outside of SoC
 
-This guide is on accessing the peacock server outside of SoC.
+This guide is on accessing the peacock server outside of SoC using SoC VPN / SSH Jump Host.
 
 The peacock server, like all other SoC clusters, requires access to the SoC network either by connecting to SoC wifi, [SoC VPN](https://dochub.comp.nus.edu.sg/cf/guides/network/vpn/start) or using [SoC SSH Jump Host](https://dochub.comp.nus.edu.sg/cf/guides/sjump/start).
 
