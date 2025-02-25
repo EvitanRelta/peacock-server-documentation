@@ -29,7 +29,7 @@ ssh [NEW_USER]@peacock.d2.comp.nus.edu.sg
 
 The peacock server has password login disabled, so SSH public key authentication is necessary for all users.
 
-Refer to [`generating_ssh_key_pair.md`](generating_ssh_key_pair.md) for a guide on how to generate a SSH key-pair.
+Refer to [`docs/generating_ssh_key_pair.md`](docs/generating_ssh_key_pair.md) for a guide on how to generate a SSH key-pair.
 
 <br>
 

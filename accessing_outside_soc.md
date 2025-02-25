@@ -40,7 +40,7 @@ If you're a SoC student but don't have an SoC account yet, you should be above t
 
 ### Generating SSH key-pair
 
-Refer to [`generating_ssh_key_pair.md`](generating_ssh_key_pair.md) for a guide on how to generate a SSH key-pair.
+Refer to [`docs/generating_ssh_key_pair.md`](docs/generating_ssh_key_pair.md) for a guide on how to generate a SSH key-pair.
 
 <br>
 
