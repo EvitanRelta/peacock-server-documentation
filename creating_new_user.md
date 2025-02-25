@@ -61,4 +61,4 @@ For an account created via `sudo adduser [NEW_USER]`, the user can access the se
 ssh [NEW_USER]@peacock.d2.comp.nus.edu.sg
 ```
 
-> ⚠️ Access to SoC network is required, either by connecting to SoC wifi, [SoC VPN](https://dochub.comp.nus.edu.sg/cf/guides/network/vpn/start) or using [SoC SSH Jump Host](https://dochub.comp.nus.edu.sg/cf/guides/sjump/start).
+> ⚠️ Access to SoC network is required, either by connecting to SoC wifi, [SoC VPN](accessing_outside_soc.md#soc-vpn) or using [SoC SSH Jump Host](accessing_outside_soc.md#soc-ssh-jump-host).
