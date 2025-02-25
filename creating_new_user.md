@@ -84,7 +84,7 @@ After the new user has generated a SSH key-pair, ask them to send the contents o
 It should look something like this:
 
 ```
-ssh-rsa AAAAB3NzaC...HIbbDaTTAQ== shaun@LAPTOP-V66PNAGT
+ssh-rsa AAAAB3NzaC...HIbbDaTTAQ== myuser@LAPTOP-V66PNAGT
 ```
 
 This string needs to be appended to the `.ssh/authorized_keys` file in their peacock server account's directory _(ie. `/home/[NEW_USER]/.ssh/authorized_keys` for a user created using `sudo adduser [NEW_USER]`)_.
@@ -92,7 +92,7 @@ This string needs to be appended to the `.ssh/authorized_keys` file in their pea
 As an admin logged in on the peacock server, you can do this using `echo` and `sudo tee`:
 
 ```bash
-echo "ssh-rsa AAAAB3NzaC...HIbbDaTTAQ== shaun@LAPTOP-V66PNAGT" | sudo tee -a /home/[NEW_USER]/.ssh/authorized_keys > /dev/null
+echo "ssh-rsa AAAAB3NzaC...HIbbDaTTAQ== myuser@LAPTOP-V66PNAGT" | sudo tee -a /home/[NEW_USER]/.ssh/authorized_keys > /dev/null
 ```
 
 <br>
