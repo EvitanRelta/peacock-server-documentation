@@ -62,3 +62,21 @@ ssh [NEW_USER]@peacock.d2.comp.nus.edu.sg
 ```
 
 > ⚠️ Access to SoC network is required, either by connecting to SoC wifi, [SoC VPN](accessing_outside_soc.md#soc-vpn) or using [SoC SSH Jump Host](accessing_outside_soc.md#soc-ssh-jump-host).
+
+<br>
+
+## Step 5: Granting admin permissions _(as the admin)_
+
+To give the new user admin privileges, add them to the `sudo` group:
+
+```bash
+sudo usermod -aG sudo [NEW_USER]
+```
+
+This grants the user the ability to:
+
+-   Use the `sudo` prefix to execute commands with root privileges
+-   Create new users and manage user permissions _(using `sudo adduser`)_
+-   Grant admin privileges to other users
+
+Users will need to re-login for this change to take effect.
