@@ -4,7 +4,7 @@ This guide is on creating a new account on the peacock server and giving a new u
 
 <br>
 
-## Create new user account _(as the admin)_
+## Step 1: Create new user account _(as the admin)_
 
 You'll need to be logged in as an existing user with admin permissions.
 
@@ -25,7 +25,7 @@ ssh [NEW_USER]@peacock.d2.comp.nus.edu.sg
 
 <br>
 
-## Generating SSH key-pair _(as the new user)_
+## Step 2: Generating SSH key-pair _(as the new user)_
 
 The peacock server has password login disabled, so SSH public key authentication is necessary for all users.
 
@@ -33,7 +33,7 @@ Refer to [`docs/generating_ssh_key_pair.md`](docs/generating_ssh_key_pair.md) fo
 
 <br>
 
-## Registering new user's SSH key _(as the admin)_
+## Step 3: Registering new user's SSH key _(as the admin)_
 
 After the new user has generated a SSH key-pair, ask them to send the contents of their public key file _(eg. `~/.ssh/id_ed25519.pub` if they used default save path for Ed25519 key)_.
 
@@ -53,7 +53,7 @@ echo "ssh-ed25519 AAAAC3NzaC...cHmsVu4vP5 myuser@LAPTOP-V66PNAGT" | sudo tee -a 
 
 <br>
 
-## Accessing the server _(as the new user)_
+## Step 4: Accessing the server _(as the new user)_
 
 For an account created via `sudo adduser [NEW_USER]`, the user can access the server via SSH by:
 
