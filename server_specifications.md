@@ -4,7 +4,7 @@ Last updated on 5 March 2025.
 
 -   **GPUs _(num. of GPUs: 1)_**:
 
-    1. NVIDIA RTX A5000 _(23028 MiB VRAM)_
+    1. NVIDIA RTX A5000 &nbsp; _(23028 MiB VRAM)_
 
 -   **CPU**:
 
@@ -23,5 +23,5 @@ Last updated on 5 March 2025.
 
 -   **CUDA**:
     -   **NVIDIA driver version**: 525.125.06
-    -   **Driver's max supported CUDA version**: 12.0
-    -   **Currently installed CUDA version**: 11.3.109
+    -   **Driver's max supported CUDA version**: 12.0 &nbsp; _(from `nvidia-smi`)_
+    -   **Currently installed CUDA version**: 11.3.109 &nbsp; _(from `nvcc`)_

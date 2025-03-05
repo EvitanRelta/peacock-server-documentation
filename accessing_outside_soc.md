@@ -4,7 +4,7 @@ This guide is on accessing the peacock server outside of SoC using SoC VPN / SSH
 
 The peacock server, like all other SoC clusters, requires access to the SoC network either by connecting to SoC wifi, SoC VPN or using SoC SSH Jump Host.
 
-The official SoC DocHub guides are at:
+The official SoC DocHub guides that this is based on are:
 
 -   [Guide For New Users](https://dochub.comp.nus.edu.sg/cf/info/newusers) _(including how to apply for an SoC account)_
 -   [SoC VPN](https://dochub.comp.nus.edu.sg/cf/guides/network/vpn/start)
@@ -79,7 +79,7 @@ This is based on the official SoC DocHub guide on SSH Jump Host is at: https://d
         Get-Content C:\Users\[USERNAME]\.ssh\id_ed25519.pub | ssh [SOC_ACC_USERNAME]@skeys.comp.nus.edu.sg jump
         ```
 
-    -   **Git Bash (or any Unix-like terminals):**
+    -   **Git Bash _(or any Unix-like terminals)_:**
 
         ```
         ssh [SOC_ACC_USERNAME]@skeys.comp.nus.edu.sg jump
